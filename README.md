@@ -1,10 +1,10 @@
 Web-Response
 ============
 
-Português: Class to return response to services  
-English: Class to return response to services  
+Português: Classe para retornar respostas para serviços web com um padrão comum definido  
+English: Class to return response to web services with a common pattern  
   
-[PORTUGUÊS]  
+### EM PORTUGUÊS
   
 Exemplo em PHP:  
   
@@ -14,7 +14,7 @@ Exemplo em PHP:
 $response = new WebRespone();
 $response->setSuccess(true); 
 $response->setMessage('redirect');  
-$response->addData('url_to_redirect', 'http://www.prsolucoes.com');
+$response->addData('url-to-redirect', 'http://www.prsolucoes.com');
 echo($response);
 ```
   
