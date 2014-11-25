@@ -37,3 +37,37 @@ $response->setSuccess(false);
 $response->setMessage('login-error');
 echo($response);
 ```
+
+### IN ENGLISH
+  
+PHP example:  
+  
+> success example  
+  
+```php
+$response = new WebRespone();
+$response->setSuccess(true); 
+$response->setMessage('redirect');  
+$response->addData('url-to-redirect', 'http://www.prsolucoes.com');
+echo($response);
+```
+  
+> validation example  
+
+```php
+$response = new WebRespone();
+$response->setSuccess(false);
+$response->setMessage('validate');
+$response->addError('name', 'The name cannot be empty');
+$response->addError('email', 'The email is invalid');
+echo($response);
+```
+
+> simple erro example  
+
+```php
+$response = new WebRespone();  
+$response->setSuccess(false);
+$response->setMessage('login-error');
+echo($response);
+```
