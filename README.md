@@ -10,11 +10,13 @@ Exemplo em PHP:
   
 // exemplo de sucesso  
   
-`$response = new WebRespone();`  
-`$response->setSuccess(true);` 
-`$response->setMessage('redirect');`  
-`$response->addData('url_to_redirect', 'http://www.prsolucoes.com');`  
-`echo($response);`  
+```php
+$response = new WebRespone();
+$response->setSuccess(true); 
+$response->setMessage('redirect');  
+$response->addData('url_to_redirect', 'http://www.prsolucoes.com');
+echo($response);
+```
   
 // exemplo de erro na validação  
 `$response = new WebRespone();`  
