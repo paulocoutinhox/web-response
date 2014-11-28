@@ -38,7 +38,7 @@ $response->setMessage('login-error');
 echo($response);
 ```
 
-> para usar com o framework Yii2, adicione as linhas abaixo dentro do array de configuração:
+> para usar com o framework Yii2 + Composer, adicione as linhas abaixo dentro do array de configuração:
 
 ```php
 $config = [
@@ -49,6 +49,8 @@ $config = [
     // ... outras configs ...
 ];    
 ```
+Repositório no Packagist:
+https://packagist.org/packages/prsolucoes/web-response
 
 ### IN ENGLISH
   
@@ -95,3 +97,6 @@ $config = [
     // ... other configs ...
 ];    
 ```
+
+Packagist repository:
+https://packagist.org/packages/prsolucoes/web-response
