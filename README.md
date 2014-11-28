@@ -38,6 +38,18 @@ $response->setMessage('login-error');
 echo($response);
 ```
 
+> para usar com o framework Yii2, adicione as linhas abaixo dentro do array de configuração:
+
+```php
+$config = [
+    // ... outras configs ...
+    'aliases' => [
+        '@com/prsolucoes' => '@vendor/prsolucoes/web-response/php/source',
+    ],
+    // ... outras configs ...
+];    
+```
+
 ### IN ENGLISH
   
 PHP example:  
@@ -70,4 +82,16 @@ $response = new WebRespone();
 $response->setSuccess(false);
 $response->setMessage('login-error');
 echo($response);
+```
+
+> to use with framework Yii2, add these two lines in the configuration array:
+
+```php
+$config = [
+    // ... other configs ...
+    'aliases' => [
+        '@com/prsolucoes' => '@vendor/prsolucoes/web-response/php/source',
+    ],
+    // ... other configs ...
+];    
 ```
