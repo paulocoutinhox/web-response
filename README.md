@@ -100,3 +100,22 @@ $config = [
 
 Packagist repository:
 https://packagist.org/packages/prsolucoes/web-response
+
+## Result JSON format
+
+```
+{
+    "success": false,
+    "message": "register-failed",
+    "data": {
+        "errors": [
+            "email": [
+                "E-mail required",
+                "E-mail invalid",
+            ]
+        ],
+        "tag": "task-3414"
+    }
+}
+```
+
