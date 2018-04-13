@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "com\\prsolucoes\\": ""
+            "com\\prsolucoes\\": "php/source"
         }
     }
 }
